@@ -11,6 +11,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.model.MemberDAO;
+import com.model.MemberVO;
 
 
 @WebServlet("/LoginService")
@@ -21,37 +25,24 @@ public class LoginService extends HttpServlet {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
-		try {		
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-
-			String url = "JDBC:oracle:thin:@211.105.164.194:1521:xe";
-			String dbid = "hr";
-			String dbpw = "hr";
-			
-			Connection conn = DriverManager.getConnection(url, dbid, dbpw);
 		
-			
-			String sql = "select * from mms where id = ? and pw = ?";
-			
-			PreparedStatement psmt = conn.prepareStatement(sql);
-			
-			psmt.setString(1,id);
-			psmt.setString(2,pw);
-			
-			ResultSet rs = psmt.executeQuery();
+		MemberDAO dao = new MemberDAO();
+		MemberVO vo = dao.login(id, pw);
 		
-			//T / F로 반환됨
-			
-			if(rs.next()==true){
-				System.out.println("로그인성공");
-				response.sendRedirect("LoginMain.html");
-			}else{
-				System.out.println("로그인실패");
-				response.sendRedirect("Main.html");
-			}
-		}catch (Exception e) {
-			e.printStackTrace();
+		
+		if(vo != null) {
+		//세션 객체 생성
+		HttpSession session = request.getSession();
+		
+		//세션 값 설정, 로그인 한 사용자의 정보
+		session.setAttribute("member", vo);
+		
+		response.sendRedirect("LoginMain.html");
+		
+		}else {
+			response.sendRedirect("Main.html");
 		}
+		
 	}
 
 }
