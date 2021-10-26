@@ -27,6 +27,7 @@ public class MemberDAO {
 
 			// 2. 데이터베이스 연결 객체 (Connection) 생성
 			conn = DriverManager.getConnection(url, user, password);
+			
 		} catch (Exception e) {
 			// 오류 출력
 			e.printStackTrace();
@@ -83,7 +84,7 @@ public class MemberDAO {
 		try {
 			connection();
 
-			String sql = "select name, id, address from MMS where id =? and pw=?";
+			String sql = "select name, id, nick from MMS where id =? and pw=?";
 
 			pst = conn.prepareStatement(sql);
 
@@ -97,9 +98,9 @@ public class MemberDAO {
 
 				String get_name = rs.getString("name");
 				String get_id = rs.getString("id");
-				String get_address = rs.getString("address");
+				String get_nick = rs.getString("nick");
 
-				vo = new MemberVO(get_name, get_id, get_address);
+				vo = new MemberVO(get_name, get_id, get_nick);
 
 			} else {
 				System.out.println("로그인실패");

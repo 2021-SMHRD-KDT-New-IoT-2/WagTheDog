@@ -37,7 +37,7 @@ public class LoginService extends HttpServlet {
 		//세션 값 설정, 로그인 한 사용자의 정보
 		session.setAttribute("member", vo);
 		
-		response.sendRedirect("LoginMain.html");
+		response.sendRedirect("LoginMain.jsp");
 		
 		}else {
 			response.sendRedirect("Main.html");
