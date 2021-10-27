@@ -69,7 +69,7 @@
 							<header>
 								<div id="Calendar"><%@ include file="/Calendar.html"%></div>
 								<button>My Pets Issue</button>&nbsp;&nbsp;
-								<button>My Page</button>&nbsp;&nbsp;
+								<a href="Update.jsp"><button>My Page</button></a>&nbsp;&nbsp;
 								<button>MEMO</button>&nbsp;&nbsp;
 								<br>
 								<br>

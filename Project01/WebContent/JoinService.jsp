@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png이" type="text/css">
+		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
 		<title>Wag The Dog</title>
 		<meta charset="EUC-KR">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -44,7 +44,7 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="index.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="Main.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
