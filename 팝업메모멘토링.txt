@@ -1,0 +1,20 @@
+     <!--  <script>
+      	
+       	$('.day').each(function(){    //현재 캘린더의 날짜 적어져 있는 부분이 다 클래스가 day로 지정되어 있어서 class가 day인 부분에 각각 함수를 지정해주기 위해서 each를 사용했구요
+       		$(this).click(function(event){   //여기서 this는 클래스가 day라고 지정된것 중에서 클릭된 것만 따로 함수를 호출해 주는 거에요
+       			$('#memo').remove();    //일단 아래쪽에서 아이디가 memo인 div를 생성하는데 이미 다른 날짜를 선택했다면 그 div가 생성이 되어있을테니 일단 #memo 를 지워줬구요
+       			alert($(this).attr('data-fdate'));  // $($this).attr('data-fdate') 사용하면 선택한 날짜를 가지고 올수 있어요 요건 이미 속성값으로 지정되어있던거 가지고 왔구요
+       			x = event.pageX;   //이건 현재 클릭한 위치의 x좌표값 가지고 오는거
+       			y = event.pageY;   //이건 y좌표값 가지고 오는거
+       			
+       			alert(x+","+y);
+       			$(this).after("<div id='memo' style='position : fixed; left:"+x+"px; top:"+y+"px; width:200px; height:300px; z-index:2; background-color:red;'>!!!!</div>");
+       			//x,y로 클릭한 위치 좌표값 가지고 온다음에 그 위치에 일단 div 생성해 놧어요 이 div 태그 사이에 메모장 만들고 싶다면 글자 적을수 있느 textarea 같은 태그 추가해 주면 되구요
+       			//속성도 이태그는 클릭하면 생성되는 부분이여서 일단 인라인으로 써놨어요
+       			//이해되시나여?
+       					
+       		})
+       	})
+      
+      </script>
+       -->
