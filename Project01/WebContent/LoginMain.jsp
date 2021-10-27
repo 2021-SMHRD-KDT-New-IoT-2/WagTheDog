@@ -61,7 +61,7 @@
 					<div class="container">
 						<article id="main" class="special">
 						<header>
-						<h2><a href="#">WEB CARE</a></h2>
+						<h2><a href="Calendar.html">WEB CARE</a></h2>
 								<p>
 								우리아이의 상태를 확인해보세요!
 								</p>
@@ -74,7 +74,7 @@
 								<br>
 								<br>
 								<a href="#"><strong>LOGOUT</strong></a>
-								</header>
+							</header>
 						</div>
 					</div>
 				<!-- Scripts -->
