@@ -1,10 +1,8 @@
-<!DOCTYPE HTML>
-<!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
 <html>
+<head>
 	<head>
 		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
 		<title>Wag The Dog</title>
@@ -13,40 +11,24 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="homepage is-preload">
+</head>
+<body>
 		<div id="page-wrapper">
-
-			<!-- Header -->
+					<!-- Header -->
 				<div id="header">
 
 					<!-- Inner -->
-						<div class="inner">
+						<!-- <div class="inner">
 							<header>
-								
-							<h5>회원가입</h5>
-								<br>
-								<form action = "JoinService" method = "post">
-								<br>
-									<input name="id" id="input_id" type="text" placeholder="ID를 입력하세요">
-									
-										<input type="button" value="ID중복체크" onclick="idCheck()"><br>
-										
-										<span id="sp_result"></span>
-									
-									<br><input name="pw" type="password" placeholder="PW를 입력하세요">
-									<input name="name" type="text" placeholder="이름을 입력하세요">
-									<input name="address" type="text" placeholder="집주소를 입력하세요">
-									<br>
-									<input type="submit" value="JoinUs" class="button fit">
-									</form>
-								
-							</header>	
+								<h1><a href="index.html" id="logo">WEB CARE</a></h1>
+							</header>
 						</div>
+						 -->
 
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="index.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
@@ -73,6 +55,28 @@
 						</nav>
 
 				</div>
+		<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+						<header>
+						<h2><a href="#">WEB CARE</a></h2>
+								<p>
+								�츮������ ���¸� Ȯ���غ�����!
+								</p>
+							</header>
+							<header>
+								<div id="Calendar"><%@ include file="/Calendar.html"%></div>
+								<button>My Pets Issue</button>&nbsp;&nbsp;
+								<button>My Page</button>&nbsp;&nbsp;
+								<button>MEMO</button>&nbsp;&nbsp;
+								<br>
+								<br>
+								<a href="#"><strong>LOGOUT</strong></a>
+								</header>
+						</div>
+					</div>
 				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -82,13 +86,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
-			<script>
-				function idcheck(){
-					
-				}
-			
-			</script>
 
 	</body>
 </html>

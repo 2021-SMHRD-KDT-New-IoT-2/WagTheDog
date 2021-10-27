@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
+		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png이" type="text/css">
 		<title>Wag The Dog</title>
 		<meta charset="EUC-KR">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
