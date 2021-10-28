@@ -28,10 +28,11 @@
 								<h1><a href="Main.jsp" id="logo">Wag The Dog</a></h1>
 								<br>
 								  <%if(vo==null){ %>
-									<h3>로그인이 필요합니다.</h3>
+									<h3><a href="Main.jsp">로그인이 필요합니다.</a></h3>
 									
 									<%}else{ %>
 								<h2><%=vo.getId() %>님 환영합니다!</h2>
+									<a href="LogoutService">LOGOUT</a>
 									<%} %>
 							</header>
 							
@@ -41,8 +42,12 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
@@ -51,9 +56,7 @@
 										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								
 							</ul>
 						</nav>
 				</div>

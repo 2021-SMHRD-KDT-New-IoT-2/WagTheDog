@@ -40,7 +40,7 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>

@@ -21,6 +21,10 @@
 						<nav id="nav">
 						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
@@ -29,9 +33,7 @@
 										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								
 							</ul>
 						</nav>
 				</div>

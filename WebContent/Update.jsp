@@ -28,11 +28,12 @@
 								<br>
 								<form action="UpdateService" method="post">
 									<%if(vo==null){ %>
-									<%response.sendRedirect("Main.html"); %>
+									<%response.sendRedirect("Main.jsp"); %>
 									
 									<%}else{ %>
 									현재 접속중인 아이디 ID : <%=vo.getId() %> 
 									<%} %>
+									
 									<br>
 									<br>
 									 <form action = "UpdateService" method="post">
@@ -54,17 +55,19 @@
 						<nav id="nav">
 						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="#">Notice</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="#">QNA</a></li>
+										<li><a href="#">Q&A</a></li>
+										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who we are</strong></a></li>
+								
 							</ul>
 						</nav>
 

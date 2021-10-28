@@ -25,6 +25,10 @@
 						<nav id="nav">
 						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
@@ -33,9 +37,7 @@
 										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="LoginMain.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								
 							</ul>
 						</nav>
 				</div>
@@ -59,16 +61,15 @@
 								<section>
 								
 								<div class="memo">
-								<tr>
-									<td alight="center"> 체크리스트 </td>
+								<span>날짜</span>
+								<ul>
+									<li>투약 여부 <input type="checkbox" name="medicine"></li>
+									<br>
+									<li>병원에 갔어요<input type="checkbox" name="hospital"></li>
+								</ul>	
 									
-									<ul>
-									투약 여부 <input type="radio" name="medicine">
-									병원에 갔어요<input type="radio" name="hospital">
-									</ul>
-									
-								</tr>
 								<textarea></textarea>
+								<br>
 								<br>
 								<input type="submit" value="저장">
 								</div>
@@ -84,6 +85,7 @@
 									
 									<%}else{ %>
 									<h5> 현재 접속중인 ID : <%=vo.getId() %> </h5>
+									<a href="LogoutService.jsp">LOGOUT</a>
 									<%} %>
 								
 								</header>
