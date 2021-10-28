@@ -147,7 +147,6 @@ input, select, textarea {
 		font-weight: 600;
     	font-size: x-large;
     	font-style: initial;
-    	font-family: -webkit-pictograph;
     	color: #483949;
 	}
 
@@ -163,7 +162,7 @@ input, select, textarea {
     -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-    font-family: -webkit-pictograph;
+    
 }
 
 
@@ -1780,7 +1779,6 @@ input, select, textarea {
 			margin: 1em 0 2em 0;
 			line-height: 1.5em;
 			text-align: inherit;
-			font-family: -webkit-pictograph;
     		font-weight: normal;
 		}
 
@@ -1952,6 +1950,8 @@ input, select, textarea {
 
 /* Form */
 	.joincss{
+			height:600px;
+			width:400px;
 			float : center;
 			margin : relative;
 			right : 30%;
@@ -1969,10 +1969,10 @@ input, select, textarea {
 	form select,
 	form textarea {
 		-webkit-appearance: none;
-		display: block;
+		display: inline-block;
 		border: 0;
 		background: #fafafa;
-		width: 30%;
+		width: 200px;
 		border-radius: 0.5em;
 		border: solid 1px #E5E5E5;
 		padding: 1em;
@@ -2088,14 +2088,15 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
-		position: relative;
+	
+	position: relative;
     display: inline-block;
     background: #df7366;
     color: #fff;
     text-align: center;
     border-radius: 0.5em;
     text-decoration: none;
-    padding: 0.65em 3em 0.65em 3em
+    padding: 0.65em 3em 0.65em 3em;
  
 		border: 0;
 		cursor: pointer;
@@ -2105,7 +2106,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		font-family: -webkit-pictograph;
+		
 	}
 
 		input[type="button"]:hover,

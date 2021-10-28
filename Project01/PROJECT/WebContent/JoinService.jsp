@@ -11,8 +11,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="homepage is-preload">
+<body>
 			<div id="page-wrapper">
+				<!-- Header -->
 				<div id="header">
 
 					<!-- Nav -->
@@ -40,7 +41,7 @@
 								</li>
 								<li><strong><a href="left-sidebar.html">Web CARE</strong></a></li>
 								<li><strong><a href="right-sidebar.html">PRODUCT</strong></a></li>
-								<li><strong><a href="no-sidebar.html">Who we are</strong></a></li>
+								<li><strong><a href="no-sidebar.html">Who WE ARE</strong></a></li>
 							</ul>
 						</nav>
 
@@ -51,15 +52,17 @@
 					<div class="container">
 						<article id="main" class="special">
 						<header>
+						
 						<h2><a href="#">회원가입</a></h2>
 								<p>
 								Wag The Dog의 가족이 되어주세요
 								</p>
 							</header>
+							
 							<header>
 							<div id="joincss">
 								<form action = "JoinService" method = "post">
-								<br>
+									
 									<input name="id" id="input_id" type="text" placeholder="ID를 입력하세요">
 									<br>
 									<input type="button" value="ID중복체크" onclick="idCheck()"><br>
@@ -67,15 +70,15 @@
 									<span id="sp_result"></span>
 									
 									<br><input name="pw" type="password" placeholder="PW를 입력하세요">
+									<br>
 									<input name="name" type="text" placeholder="이름을 입력하세요">
+									<br>
 									<input name="address" type="text" placeholder="집주소를 입력하세요">
 									<br>
 									<input type="submit" value="JoinUs" class="button fit">
 									</div>
-									<br>
-									
 								</form>
-								</div>
+							</div>
 							</header>	
 								
 								
