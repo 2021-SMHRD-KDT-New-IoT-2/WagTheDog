@@ -1950,11 +1950,19 @@ input, select, textarea {
 
 /* Form */
 	.joincss{
+			!important;
 			height:600px;
 			width:400px;
 			float : center;
 			margin : relative;
 			right : 30%;
+			
+	}
+	
+	.joincss > input {
+	
+	width : 400px;	
+	
 	}
 	form label {
 		display: block;
