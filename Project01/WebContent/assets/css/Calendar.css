@@ -17,7 +17,8 @@ html, body {
 
 /* ======== Calendar ======== */
 .my-calendar {
-  width: 1200px;
+	
+  width: 800px;
   margin: 30px;
   padding: 20px 20px 10px;
   text-align: center;
@@ -26,12 +27,25 @@ html, body {
   cursor: default;
   
 }
+
+.memo{
+	width: 400px;
+	height: 300px;
+	padding: 20px 20px 10px;
+	border : 1px solid #ddd;
+	float : right;
+	display : inline-block;
+	position : relative;
+	bottom : 450px;
+	right : 10px;
+}
+
 .my-calendar .clicked-date {
   border-radius: 25px;
-  margin-top: 75px;
-  margin-left: 140px;
+  margin-top: 45px;
+  margin-left: 40px;
   float: left;
-  width: 25%;
+  width: 35%;
   padding: 46px 0 26px;
   background: #ff8585;
 }
@@ -42,11 +56,13 @@ html, body {
 }
 
 .clicked-date .cal-day {
+	margin : 40px;
+
   font-size: 24px;
 }
 .clicked-date .cal-date {
   font-size: 130px;
-  margin : 50px;
+  margin-bottom : 100px;
 }
 
 .ctr-box {

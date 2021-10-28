@@ -1,7 +1,6 @@
 package conn.controlloer;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,8 +15,8 @@ import com.model.MemberDAO;
 public class JoinService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
-
+		request.setCharacterEncoding("euc-kr");
+		
 		//요청데이터 받아주기
 		String name = request.getParameter("name");
 		String id = request.getParameter("id");
@@ -46,13 +45,9 @@ public class JoinService extends HttpServlet {
 			//닫아줄때는 getParameter로 받아주어야 함
 			
 			}else {
-			
-			PrintWriter out = response.getWriter();
-			out.println("<script>");
-			out.println("alert('Join Failure! Rewrite the requirement!'); location.href='JoinService.jsp';");
-			out.println("</script>");
-			out.flush();
+				
 			System.out.println("가입실패");
+			response.sendRedirect("Main.html");
 			
 		}
 	}
