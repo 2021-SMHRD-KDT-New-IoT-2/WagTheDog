@@ -11,6 +11,10 @@
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body>
+		<%	
+			MemberVO vo = (MemberVO)session.getAttribute("member");
+		%>
+		
 	<div id="page-wrapper">
 		<!-- Header -->
 		<div id="header">
@@ -18,19 +22,25 @@
 			<!-- Nav -->
 
 			<nav id="nav">
-				<a href="Main.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+				<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 				<ul>
 					<li><a href="#"><strong>Communicate</strong></a>
 						<ul>
+						
 							<li><a href="#">Notice</a></li>
 							<li><a href="#">Q&A</a></li>
 							<li><a href="#">Communication</a></li>
-						</ul></li>
+						</ul>
+					</li>
+					
 					<li><strong><a href="LoginMain.jsp">Web CARE</strong></a></li>
 					<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 					<li><strong><a href="WhoWeare.jsp">Who WE ARE</strong></a></li>
+					
 				</ul>
+				
 			</nav>
+			
 		</div>
 		
 		<!-- Main -->
@@ -52,6 +62,7 @@
 								<input name="id" id="input_id" type="text" placeholder="ID를 입력하세요"><br> 
 								<input type="button" value="ID중복체크" onclick="idCheck()"> <br> 
 								<span id="sp_result"></span> <br>
+								
 								<!-- 회원가입 필수요소 -->
 								<input name="pw" type="password" placeholder="PW를 입력하세요">
 								<br> <input name="name" type="text" placeholder="이름을 입력하세요">
