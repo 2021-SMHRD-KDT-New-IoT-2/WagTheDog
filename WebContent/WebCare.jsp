@@ -61,13 +61,18 @@
 								<section>
 								
 								<div class="memo">
-								<span>날짜</span>
+								<span>날짜(AJAX쓸지,아니면js에서값을가져올지)</span>
 								<ul>
-									<li>투약 여부 <input type="checkbox" name="medicine"></li>
+									<label><input type="checkbox" name="medi" value="medicine">투약여부</label>
 									<br>
-									<li>병원에 갔어요<input type="checkbox" name="hospital"></li>
+      								<label><input type="checkbox" name="hospital" value="hospital">병원여부</label>
+      								<!-- <p>
+      								<input type="submit" value="Submit"> 
+      								<input type="reset" value="Reset">
+      								</p>
+      								 -->
 								</ul>	
-									
+								
 								<textarea></textarea>
 								<br>
 								<br>
