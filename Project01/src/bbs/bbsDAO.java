@@ -14,9 +14,9 @@ public class bbsDAO {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String user = "kim";
-			String password = "1234";
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String user = "campus_b_5_1025";
+			String password = "smhrd5";
 
 			// 2. 데이터베이스 연결 객체 (Connection) 생성
 			conn = DriverManager.getConnection(url, user, password);

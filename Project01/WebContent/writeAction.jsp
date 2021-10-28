@@ -1,9 +1,15 @@
+<%@page import="java.io.IOException"%>
+<%@page import="java.sql.*"%>
+<%@page import="javax.servlet.*"%>
+
+<%@page import="com.model.MemberDAO"%>
+<%@page import="com.model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@ page import="bbs.bbsDAO"%>
 <%@ page import="java.io.PrintWriter" %>
 <% request.setCharacterEncoding("UTF-8"); %>
-<jsp:useBean id="bbs" class = "bbs.bbs" scope = "page"/>
+<jsp:useBean id="bbs" class = "bbs.bbsVO" scope = "page"/>
 <jsp:setProperty name="bbs" property="bbsTitle" />
 <jsp:setProperty name="bbs" property="bbsContent" />
 
@@ -16,7 +22,7 @@
 <body>
 	<%
 		String id = null;
-		if(session.getAttribute("id")!=null){
+		if(session.getAttribute("id") != null){
 			id = (String)session.getAttribute("id");
 		}
 		
@@ -50,8 +56,7 @@
 					script.println("</script>");
 				}
 			}
-		}
-	
+		}	
 	%>
 </body>
 </html>

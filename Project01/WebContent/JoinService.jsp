@@ -36,6 +36,8 @@
 									<input name="address" type="text" placeholder="집주소를 입력하세요">
 									<br>
 									<input type="submit" value="JoinUs" class="button fit">
+									<input type="reset" value="Reset" class="button fit">
+									<input type="button" onclick="location.href='Main.html'" value="Cancel" class="button fit">
 								</form>
 								
 							</header>	
@@ -51,22 +53,12 @@
 									<ul>
 										<li><a href="#">Notice</a></li>
 										<li><a href="#">FAQ</a></li>
-										<li><a href="#">QNA</a></li>
-										<li>
-											<a href="#">And a submenu &hellip;</a>
-											<ul>
-												<li><a href="#">Lorem ipsum dolor</a></li>
-												<li><a href="#">Phasellus consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">QnA</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="left-sidebar.html">Web CARE</strong></a></li>
-								<li><strong><a href="right-sidebar.html">PRODUCT</strong></a></li>
-								<li><strong><a href="no-sidebar.html">Who we are</strong></a></li>
+								<li><strong><a href="#">Web CARE</strong></a></li>
+								<li><strong><a href="#">PRODUCT</strong></a></li>
+								<li><strong><a href="#">Who we are</strong></a></li>
 							</ul>
 						</nav>
 
