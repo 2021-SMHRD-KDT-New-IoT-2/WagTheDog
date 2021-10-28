@@ -27,7 +27,7 @@ public class MemberDAO {
 
 			// 2. 데이터베이스 연결 객체 (Connection) 생성
 			conn = DriverManager.getConnection(url, user, password);
-			System.out.println("연결 성공");
+			
 		} catch (Exception e) {
 			// 오류 출력
 			e.printStackTrace();

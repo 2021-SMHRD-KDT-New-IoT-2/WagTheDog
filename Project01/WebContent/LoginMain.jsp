@@ -1,73 +1,86 @@
+<%@page import="com.model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<head>
-		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
+<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
 		<title>Wag The Dog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
 </head>
-<body>
+<body class="homepage is-preload">
+
+		<%	
+			MemberVO vo = (MemberVO)session.getAttribute("member");
+		%>
+		
 		<div id="page-wrapper">
-					<!-- Header -->
+
+			<!-- Header -->
 				<div id="header">
 
 					<!-- Inner -->
-						<!-- <div class="inner">
+						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">WEB CARE</a></h1>
+								<h1><a href="Main.jsp" id="logo">Wag The Dog</a></h1>
+								<br>
+								  <%if(vo==null){ %>
+									<h3><a href="Main.jsp">로그인이 필요합니다.</a></h3>
+									
+									<%}else{ %>
+								<h2><%=vo.getId() %>님 환영합니다!</h2>
+									<a href="LogoutService">LOGOUT</a>
+									<%} %>
 							</header>
+							
+						
 						</div>
-						 -->
 
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="#">Notice</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="bbs.jsp">QnA</a></li>
+										<li><a href="#">Q&A</a></li>
+										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="#">Web CARE</strong></a></li>
-								<li><strong><a href="#">PRODUCT</strong></a></li>
-								<li><strong><a href="#">Who we are</strong></a></li>
+								
 							</ul>
 						</nav>
-
 				</div>
-		<!-- Main -->
-				<div class="wrapper style1">
-
-					<div class="container">
-						<article id="main" class="special">
+							
+		
+			<!-- Main -->
+				<div class="wrapper style2">
+					<article id="main" class="container special">
+						<a href="#"><img src="images/calendarimage.png" alt="" /></a>
 						<header>
-						<h2><a href="Calendar.html">WEB CARE</a></h2>
-								<p>
-								우리아이의 상태를 확인해보세요!
-								</p>
-							</header>
-							<header>
-								<div id="Calendar"><%@ include file="/Calendar.html"%></div>
-								<button>My Pets Issue</button>&nbsp;&nbsp;
-								<a href="Update.jsp"><button>My Page</button></a>&nbsp;&nbsp;
-								<button>MEMO</button>&nbsp;&nbsp;
-								<br>
-								<br>
-								<a href="#"><strong>LOGOUT</strong></a>
-							</header>
-						</div>
-					</div>
-				<!-- Scripts -->
+							<h2><a href="#">캘린더를 이용한 웹케어</a></h2>
+							<p>
+								반려동물의 급여시간, 급여횟수, 급여확인까지 한번에!
+							</p>
+						</header>
+
+						<footer>
+							<a href="WebCare.jsp" class="button">Web Care 바로가기!</a>
+						</footer>
+					</article>
+				</div>
+
+
+		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

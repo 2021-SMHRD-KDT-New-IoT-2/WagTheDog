@@ -28,13 +28,15 @@
 								<br>
 								<form action="UpdateService" method="post">
 									<%if(vo==null){ %>
-									<%response.sendRedirect("Main.html"); %>
+									<%response.sendRedirect("Main.jsp"); %>
 									
 									<%}else{ %>
 									현재 접속중인 아이디 ID : <%=vo.getId() %> 
 									<%} %>
+									
 									<br>
 									<br>
+									 <form action = "UpdateService" method="post">
 									<input name="pw" type="password" placeholder="변경할 PW를 입력하세요" style="width: 500px; margin: 0 auto;">
 									<br>
 									<input name="name" type="text"    placeholder="변경할 이름을 입력하세요" style="width: 500px; margin: 0 auto;">
@@ -42,8 +44,8 @@
 									<input name="address" type="text"    placeholder="변경할 주소를 입력하세요" style="width: 500px; margin: 0 auto;">
 									<br>
 									<br>
-									<input type="submit" value="수정" class="button fit" style="width: 100px; margin: 0 auto;">
-								</form>
+									<input type="submit" value="수정" class="button fit">
+									</form>
 								
 							</header>	
 						</div>
@@ -51,19 +53,21 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.html"><img src="images/logoimg.png" width="75px" height="75px"></a>
+						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 							<ul>
+								
+								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
+								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="#">Notice</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="bbs.jsp">QnA</a></li>
+										<li><a href="#">Q&A</a></li>
+										<li><a href="#">Communication</a></li>
 									</ul>
 								</li>
-								<li><strong><a href="#">Web CARE</strong></a></li>
-								<li><strong><a href="#">PRODUCT</strong></a></li>
-								<li><strong><a href="#">Who we are</strong></a></li>
+								
 							</ul>
 						</nav>
 
