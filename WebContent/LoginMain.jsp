@@ -32,7 +32,6 @@
 									
 									<%}else{ %>
 								<h2><%=vo.getId() %>님 환영합니다!</h2>
-									<a href="LogoutService">LOGOUT</a>
 									<%} %>
 							</header>
 							
@@ -54,7 +53,14 @@
 										<li><a href="#">Notice</a></li>
 										<li><a href="#">Q&A</a></li>
 										<li><a href="#">Communication</a></li>
+										
 									</ul>
+									 <%if(vo==null){ %>
+									<li><a href="Main.jsp">LOGIN</a></li>
+									
+									<%}else{ %>
+									<li><a href="LogoutService">LOGOUT</a><li>
+									<%} %>
 								</li>
 								
 							</ul>
@@ -78,19 +84,17 @@
 						</footer>
 					</article>
 				</div>
-							<footer id = "endfooter">
-							<a href="WebCare.jsp" class="button">Web Care 바로가기!</a>
-
-							<nav>
-								<a href="#" target="_blank">Blog</a>
-								<a href="#" target="_blank">Github</a>
-							</nav>
+							<footer>
+							
 							<div style="text-align:center">
+							<a href="#" target="_blank" style="text-align:center">Blog</a>
+							<a href="#" target="_blank">Github</a>
+							<br>
 							 <span>e-mail : </span>
 							 <br>
 							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
-							</div>
-						</footer>
+							<div>
+							</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

@@ -1,3 +1,4 @@
+<%@ page import="com.model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -12,6 +13,9 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 <body>
+		<%	
+			MemberVO vo = (MemberVO)session.getAttribute("member");
+		%>
 		<div id="page-wrapper">
 					<!-- Header -->
 				<div id="header">
@@ -32,6 +36,12 @@
 										<li><a href="#">Q&A</a></li>
 										<li><a href="#">Communication</a></li>
 									</ul>
+									 <%if(vo==null){ %>
+									<li><a href="Main.jsp">LOGIN</a></li>
+									
+									<%}else{ %>
+									<li><a href="LogoutService">LOGOUT</a><li>
+									<%} %>
 								</li>
 								
 							</ul>

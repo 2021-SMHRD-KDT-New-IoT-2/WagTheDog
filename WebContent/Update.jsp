@@ -66,6 +66,12 @@
 										<li><a href="#">Q&A</a></li>
 										<li><a href="#">Communication</a></li>
 									</ul>
+									 <%if(vo==null){ %>
+									<li><a href="Main.jsp">LOGIN</a></li>
+									
+									<%}else{ %>
+									<li><a href="LogoutService">LOGOUT</a><li>
+									<%} %>
 								</li>
 								
 							</ul>

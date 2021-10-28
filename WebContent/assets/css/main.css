@@ -3,7 +3,7 @@
 
 .memo{
 	
-	position: sticky
+	position: sticky; !important
 	
 }
 
@@ -69,11 +69,21 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input, select {
 	-moz-appearance: none;
 
 	-ms-appearance: none;
 
+}
+
+textarea {
+	
+    width: 100%;!important;
+    height: 6.25em;!important;
+    border: none;!important;
+    resize: none;!important;
+  }
+	
 }
 
 /* Basic */
@@ -106,7 +116,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	input, textarea, select {
+	input, select {
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;

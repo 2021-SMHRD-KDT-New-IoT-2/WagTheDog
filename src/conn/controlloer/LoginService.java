@@ -1,6 +1,7 @@
 package conn.controlloer;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -21,7 +22,8 @@ import com.model.MemberVO;
 public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		response.setContentType("text/html;charset=utf-8");
+
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
@@ -40,7 +42,12 @@ public class LoginService extends HttpServlet {
 		response.sendRedirect("LoginMain.jsp");
 		
 		}else {
-			response.sendRedirect("Main.jsp");
+			
+			PrintWriter out = response.getWriter(); 
+			
+			out.println("<script>alert('로그인 정보가 일치하지 않습니다.'); location.href='Main.jsp'</script>");
+			out.flush();
+
 		}
 		
 	}
