@@ -94,10 +94,21 @@
 									<%} %>
 								
 								</header>
-								
-							</article>	
-						</div>
-					</div>
+							</div>
+						</div>	
+							<footer>
+
+							<div style="text-align:center">
+							<a href="#" target="_blank" style="text-align:center">Blog</a>
+							<a href="#" target="_blank">Github</a>
+							<br>
+							 <span>e-mail : </span>
+							 <br>
+							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
+							<div>
+							</footer>
+						
+							
 					
 				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -108,6 +119,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+				<script>
+			function ComeDate(){
+				
+				var input = document.getElementById("input_id");
+				$.ajax({
+					type : "post", 
+					data : {"id" : input.value}, 
+					url : "IdCheckService",
+					dataType : "text", 
+					success : function(data){
+						var sp_result = document.getElementById("sp_result");
+		
+						if(data=="true"){
+							sp_result.innerText = "사용 불가능한 아이디";
+						}else{
+							$("#sp_result").text("사용 가능한 아이디");
+						}
+					},
+					error : function(){
+						alert("통신실패");
+					}
+				});
+				
+			}
+			
+			
+			</script>
 
 	</body>
 </html>

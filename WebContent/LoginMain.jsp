@@ -78,7 +78,19 @@
 						</footer>
 					</article>
 				</div>
+							<footer id = "endfooter">
+							<a href="WebCare.jsp" class="button">Web Care 바로가기!</a>
 
+							<nav>
+								<a href="#" target="_blank">Blog</a>
+								<a href="#" target="_blank">Github</a>
+							</nav>
+							<div style="text-align:center">
+							 <span>e-mail : </span>
+							 <br>
+							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
+							</div>
+						</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

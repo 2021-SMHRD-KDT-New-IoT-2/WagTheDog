@@ -23,8 +23,8 @@
 
 			<nav id="nav">
 				<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
-							<ul>
-								
+				
+							<ul>		
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
 								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
 								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
@@ -53,28 +53,40 @@
 					<header>
 						<h2>회원가입</h2>
 						<p>Wag The Dog의 가족이 되어주세요!</p>
-					</header>
-
-					<header>
-						<div id="joincss">
+					
+						<div>
 							<form action="JoinService" method="post">
 								<!-- ID 중복체크 -->
-								<input name="id" id="input_id" type="text" placeholder="ID를 입력하세요"><br> 
+								<input name="id" id="input_id" type="text" placeholder="ID를 입력하세요">
+								<div><br></div>
 								<input type="button" value="ID중복체크" onclick="idCheck()"> <br> 
 								<span id="sp_result"></span> <br>
 								
 								<!-- 회원가입 필수요소 -->
 								<input name="pw" type="password" placeholder="PW를 입력하세요">
 								<br> <input name="name" type="text" placeholder="이름을 입력하세요">
-								<br> <input name="address" type="text" placeholder="집주소를 입력하세요"> <br> 
-								<input type="submit" value="JoinUs" class="button fit">
-						</div>
-							</form>
-			</div>
+								<br> <input name="address" type="text" placeholder="집주소를 입력하세요"> 
+								<div><br></div>
+								<input type="submit" value="JoinUs" class="button fit">&nbsp;&nbsp;
+								<input type="reset" value="Reset" class="button fit">&nbsp;&nbsp;
+								<input type="button" onclick="location.href='Main.jsp'" value="Cancel" class="button fit">
+								
+							</form>			
 					</header>
+						</div>
+					</div>
+							<footer>
 
+							<div style="text-align:center">
+							<a href="#" target="_blank" style="text-align:center">Blog</a>
+							<a href="#" target="_blank">Github</a>
+							 <span>e-mail : </span>
+							 <br>
+							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
+							<div>
+							</footer>
 
-		</div>
+		
 	</div>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>

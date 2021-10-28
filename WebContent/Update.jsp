@@ -72,6 +72,17 @@
 						</nav>
 
 				</div>
+				
+							<footer>
+
+							<div style="text-align:center">
+							<a href="#" target="_blank" style="text-align:center">Blog</a>
+							<a href="#" target="_blank">Github</a>
+							 <span>e-mail : </span>
+							 <br>
+							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
+							</div>
+							</footer>
 				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
