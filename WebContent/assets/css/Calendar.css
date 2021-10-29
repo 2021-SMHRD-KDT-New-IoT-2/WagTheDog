@@ -34,9 +34,9 @@ html, body {
 	border : 1px solid #ddd;
 	float : right;
 	display : inline-block;
-	bottom : 450px;
-	right : 10px;
-	position: sticky
+	bottom : 200px;
+	right : 50px;
+	position: absolute;
 }
 
 .my-calendar .clicked-date {

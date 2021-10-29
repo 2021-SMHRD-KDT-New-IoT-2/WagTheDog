@@ -31,9 +31,9 @@
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
-										<li><a href="#">Notice</a></li>
-										<li><a href="#">Q&A</a></li>
-										<li><a href="#">Communication</a></li>
+										<li><a href="Notice.jsp">Notice</a></li>
+										<li><a href="QNA.jsp">Q&A</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
 								
 								 <%if(vo==null){ %>

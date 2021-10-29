@@ -32,10 +32,9 @@
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
-										<li><a href="#">Notice</a></li>
-										<li><a href="#">Q&A</a></li>
-										<li><a href="#">Communication</a></li>
-									</ul>
+										<li><a href="Notice.jsp">Notice</a></li>
+										<li><a href="QNA.jsp">Q&A</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
 									

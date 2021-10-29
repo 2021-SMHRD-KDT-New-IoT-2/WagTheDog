@@ -15,10 +15,9 @@
 	</head>
 	<body>
 	<%
-		MemberDAO dao = new MemberDAO();
+
 		MemberVO vo = (MemberVO)session.getAttribute("member");	
-		ArrayList<MemberVO> al = dao.selectAll();
-		System.out.print(al.size());
+;
 	
 	%>
 			<div id="page-wrapper">
@@ -37,9 +36,9 @@
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
-										<li><a href="#">Notice</a></li>
-										<li><a href="#">Q&A</a></li>
-										<li><a href="#">Communication</a></li>
+										<li><a href="Notice.jsp">Notice</a></li>
+										<li><a href="QNA.jsp">Q&A</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
 									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>

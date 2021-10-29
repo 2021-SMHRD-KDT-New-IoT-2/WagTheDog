@@ -6,7 +6,6 @@
 	<head>
 		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
 		<title>Wag The Dog</title>
-		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/Calendar.css" />
@@ -32,9 +31,9 @@
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
-										<li><a href="#">Notice</a></li>
-										<li><a href="#">Q&A</a></li>
-										<li><a href="#">Communication</a></li>
+										<li><a href="Notice.jsp">Notice</a></li>
+										<li><a href="QNA.jsp">Q&A</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
 									<%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
@@ -57,27 +56,20 @@
 						<article id="main" class="special">
 						
 						<header>
-						
-						<h2><a href="#">WEB CARE</a></h2>
-								<p>
-								우리아이의 상태를 확인해보세요!
-								</p>
-							</header>
-							<header>
 								<%@ include file="/Calendar.html"%>
 
 								
 								
 								<div class="memo">
 								
-								<ul>
-									<span>클릭한 날짜</span>
+							
+									<strong><span class="clickDate">날짜를 선택해주세요.</span></strong>
 									<br>
-									<input type="checkbox" name="medi" value="medicine">투약여부</label>
+									<label></label><input type="checkbox" name="medi" value="medicine">투약여부</label>
 									<br>
       								<label><input type="checkbox" name="hospital" value="hospital">병원여부</label>
       								
-								</ul>	
+								
 								
 								<form>
 								<span>MEMO</span>
@@ -88,8 +80,7 @@
 								<br>
 								<input type="submit" name="memosave" value="저장">
 								</div>
-								
-								
+
 								
 								<button>My Pets Issue</button>&nbsp;&nbsp;
 								<a href="Update.jsp"><button>My Page</button></a>&nbsp;&nbsp;

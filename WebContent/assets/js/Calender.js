@@ -47,8 +47,6 @@ const $btnPrev = document.querySelector('.btn-cal.prev');
 function loadDate (date, dayIn) {
   document.querySelector('.cal-date').textContent = date;
   document.querySelector('.cal-day').textContent = init.dayList[dayIn];
-  document.querySelector('.cal-date2').textContent = date;
-  document.querySelector('.cal-day2').textContent = init.dayList[dayIn];
 
 }
 
@@ -134,6 +132,20 @@ $calBody.addEventListener('click', (e) => {
     e.target.classList.add('day-active');
     init.activeDTag = e.target;
     init.activeDate.setDate(day);
-    reloadTodo();
+	
+    //reloadTodo();
+readDate();
   }
 });
+
+
+function readDate(){
+	var month = $('.cal-month').html();
+	var year = $('.cal-year').html();
+	var day = $('.cal-day').html();
+	var date = $('.cal-date').html();
+	
+	console.log(month, year, day, date)
+	
+	$('.clickDate').text(year+"/"+month+"/"+date+"/"+day);
+}
