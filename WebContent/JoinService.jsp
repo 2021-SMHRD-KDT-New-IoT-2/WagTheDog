@@ -33,7 +33,7 @@
 									<ul>
 										<li><a href="Notice.jsp">Notice</a></li>
 										<li><a href="QNA.jsp">Q&A</a></li>
-										<li><a href="Comminity.jsp">Communication</a></li>
+										<li><a href="Community.jsp">Communication</a></li>
 									</ul>
 								
 								 <%if(vo==null){ %>
