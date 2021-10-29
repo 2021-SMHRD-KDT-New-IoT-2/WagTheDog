@@ -1,4 +1,6 @@
 <%@ page import="com.model.MemberVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.model.MemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -11,46 +13,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="homepage is-preload">
+	<body>
 	<%
+		MemberDAO dao = new MemberDAO();
 		MemberVO vo = (MemberVO)session.getAttribute("member");	
+		ArrayList<MemberVO> al = dao.selectAll();
+		System.out.print(al.size());
+	
 	%>
 			<div id="page-wrapper">
 
 			<!-- Header -->
 				<div id="header">
-
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-								
-							<h5>회원 정보 수정</h5>
-								<br>
-								<form action="UpdateService" method="post">
-									<%if(vo==null){ %>
-									<%response.sendRedirect("Main.jsp"); %>
-									
-									<%}else{ %>
-									현재 접속중인 아이디 ID : <%=vo.getId() %> 
-									<%} %>
-									
-									<br>
-									<br>
-									 <form action = "UpdateService" method="post">
-									<input name="pw" type="password" placeholder="변경할 PW를 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<input name="name" type="text"    placeholder="변경할 이름을 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<input name="address" type="text"    placeholder="변경할 주소를 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<br>
-									<input type="submit" value="수정" class="button fit">
-									</form>
-								
-							</header>	
-						</div>
-
-					<!-- Nav -->
+				<!-- Nav -->
 					
 						<nav id="nav">
 						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
@@ -71,13 +46,53 @@
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>
+									<li><a href="Update.jsp">MYPAGE</a></li>
 									<%} %>
 								</li>
 								
 							</ul>
 						</nav>
+					</div>
+					<!-- Inner -->
+						<div class="wrapper style1">
+							
+							<div class="container">
+							
+								<article id="main" class="special">
+								
+									<header>
+									<h2>회원 정보 수정</h2>
+									<br>
+									<form action="UpdateService" method="post">
+									<%if(vo==null){ %>
+									<%response.sendRedirect("Main.jsp"); %>
+									
+									<%}else{ %>
+									현재 접속중인  ID : <%=vo.getId() %> 
+									<br>
+									현재 이름 : <%=vo.getName() %>
+									<br>
+									현재 주소 : <%=vo.getAddress() %>
+									<%} %>
+									
+									<br>
+									<br>
+									 <form action = "UpdateService" method="post">
+									<input name="pw" type="password" placeholder="변경할 PW를 입력하세요" style="width: 500px; margin: 0 auto;">
+									<br>
+									<input name="name" type="text"    placeholder="변경할 이름을 입력하세요" style="width: 500px; margin: 0 auto;">
+									<br>
+									<input name="address" type="text"    placeholder="변경할 주소를 입력하세요" style="width: 500px; margin: 0 auto;">
+									<br>
+									<br>
+									<input type="submit" value="수정" class="button fit">
+									</form>
+									</header>
+								</article>
+								</div>
+						</div>
 
-				</div>
+					
 				
 							<footer>
 

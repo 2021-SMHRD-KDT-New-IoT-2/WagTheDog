@@ -1,8 +1,13 @@
+
 const init = {
   monList: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   dayList: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
   today: new Date(),
+/* init 변수에 월,요일 배열 생성 오늘날짜는 Date() 객체 생성*/
+
   monForChange: new Date().getMonth(),
+/* 월이 바뀌는 펑션, 오늘 날짜에 get.Month() 함수 호출 */
+
   activeDate: new Date(),
   getFirstDay: (yy, mm) => new Date(yy, mm, 1),
   getLastDay: (yy, mm) => new Date(yy, mm + 1, 0),

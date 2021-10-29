@@ -41,6 +41,7 @@
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>
+									<li><a href="Update.jsp">MYPAGE</a></li>
 									<%} %>
 								</li>
 								

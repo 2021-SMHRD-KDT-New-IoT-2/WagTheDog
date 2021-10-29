@@ -41,7 +41,9 @@
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>
+									<li><a href="Update.jsp">MYPAGE</a></li>
 									<%} %>
+										
 								</li>
 								
 							</ul>
@@ -99,8 +101,9 @@
 									<%}else{ %>
 									<h5> 현재 접속중인 ID : <%=vo.getId() %> </h5>
 									<%} %>
-								
-								</header>
+									
+									</header>
+								</article>
 							</div>
 						</div>	
 						
