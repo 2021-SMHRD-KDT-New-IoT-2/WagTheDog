@@ -23,7 +23,13 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									<%if(vo==null){ %>
+									<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									
+									<%}else{ %>
+									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+
+									<%} %>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
@@ -35,6 +41,7 @@
 										<li><a href="Notice.jsp">Notice</a></li>
 										<li><a href="QNA.jsp">Q&A</a></li>
 										<li><a href="Community.jsp">Communication</a></li>
+									</ul>
 									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
 									
@@ -42,9 +49,10 @@
 									<li><a href="LogoutService">LOGOUT</a><li>
 									<li><a href="Update.jsp">MYPAGE</a></li>
 									<%} %>
+									
 								</li>
 								
-							</ul>
+							
 						</nav>
 				</div>
 		<!-- Main -->

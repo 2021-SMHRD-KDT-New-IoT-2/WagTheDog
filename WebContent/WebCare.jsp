@@ -22,7 +22,13 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									<%if(vo==null){ %>
+									<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									
+									<%}else{ %>
+									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+
+									<%} %>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
@@ -77,12 +83,11 @@
 								<input type="textarea" name="text" value="">
 								</form>
 								<br>
-								<br>
 								<input type="submit" name="memosave" value="ÀúÀå">
 								</div>
 
 								
-								<button>My Pets Issue</button>&nbsp;&nbsp;
+								<a href="MyPetIssue.jsp"><button>My Pets Issue</button></a>&nbsp;&nbsp;
 								<a href="Update.jsp"><button>My Page</button></a>&nbsp;&nbsp;
 								<br>
 								<br>

@@ -23,7 +23,13 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									<%if(vo==null){ %>
+									<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									
+									<%}else{ %>
+									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+
+									<%} %>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
@@ -102,9 +108,9 @@
 					<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2>습식사료 제조기 with <strong>Wag the Dog</strong>.</h2>
+						<h2>습식사료 제조기 with <strong>Wag The Dog</strong></h2>
 						<p>
-							습식사료 <a href="#">관련기사</a>.
+							<h3>습식사료 관련기사</h3>
 						</p>
 					</header>
 				</section>

@@ -27,7 +27,13 @@
 				<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									<%if(vo==null){ %>
+									<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									
+									<%}else{ %>
+									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+
+									<%} %>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
@@ -60,7 +66,8 @@
 								<article id="main" class="special">
 								
 									<header>
-									<h2>회원 정보 수정</h2>
+									
+									<h2>회원정보 수정</h2>
 									<br>
 									<form action="UpdateService" method="post">
 									<%if(vo==null){ %>
@@ -77,15 +84,16 @@
 									<br>
 									<br>
 									 <form action = "UpdateService" method="post">
-									<input name="pw" type="password" placeholder="변경할 PW를 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<input name="name" type="text"    placeholder="변경할 이름을 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<input name="address" type="text"    placeholder="변경할 주소를 입력하세요" style="width: 500px; margin: 0 auto;">
-									<br>
-									<br>
+									<input name="pw" type="password" placeholder="변경할 PW를 입력하세요">
+									<div><br></div>
+									<input name="name" type="text"    placeholder="변경할 이름을 입력하세요">
+									<div><br></div>
+									<input name="address" type="text"    placeholder="변경할 주소를 입력하세요">
+									<div><br></div>
+									<div><br></div>
 									<input type="submit" value="수정" class="button fit">
 									</form>
+									
 									</header>
 								</article>
 								</div>

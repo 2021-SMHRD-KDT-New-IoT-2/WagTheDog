@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page import="com.model.MemberVO"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +11,9 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="homepage is-preload">
+			<%
+			MemberVO vo = (MemberVO)session.getAttribute("member");
+			%>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -45,7 +48,13 @@
 					<!-- Nav -->
 					
 						<nav id="nav">
-						<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									<%if(vo==null){ %>
+									<a href="Main.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+									
+									<%}else{ %>
+									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
+
+									<%} %>
 							<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>

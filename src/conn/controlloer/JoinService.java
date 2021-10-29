@@ -47,7 +47,7 @@ public class JoinService extends HttpServlet {
 			}else {
 				
 			System.out.println("가입실패");
-			response.sendRedirect("Main.html");
+			response.sendRedirect("Main.jsp");
 			
 		}
 	}
