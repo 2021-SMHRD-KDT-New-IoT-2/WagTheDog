@@ -23,4 +23,6 @@ public class MemberVO {
 	public String getAddress() {
 		return address;
 	}
+	
+	
 }

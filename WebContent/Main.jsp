@@ -22,7 +22,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="Main.html" id="logo">Wag the Dog</a></h1>
+								<h1><a href="Main.jsp" id="logo">Wag the Dog</a></h1>
 								<br>
 							</header>
 							

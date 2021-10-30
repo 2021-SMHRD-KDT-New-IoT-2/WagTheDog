@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<link rel="shorcut icon" type="image/x-icon" href="images/logoimg.png" type="text/css">
+		<meta charset="utf-8" />
 		<title>Wag The Dog</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -66,24 +67,22 @@
 
 								
 								
-								<div class="memo">
+								<div class="memo" style="display : none;">
 								
-							
-									<strong><span class="clickDate">날짜를 선택해주세요.</span></strong>
+									<form action="WebCaring" method="get">
+									<strong><input type="text" class="clickDate" name="memodate" readonly></input></strong>
 									<br>
-									<label></label><input type="checkbox" name="medi" value="medicine">투약여부</label>
+									<label></label><input type="checkbox" name="medicine" value="medicine">투약여부</label>
 									<br>
       								<label><input type="checkbox" name="hospital" value="hospital">병원여부</label>
       								
-								
-								
-								<form>
-								<span>MEMO</span>
+      							<span>MEMO</span>
 								<br>
-								<input type="textarea" name="text" value="">
-								</form>
+								<input type="text" name="memo" value="">
+
 								<br>
 								<input type="submit" name="memosave" value="저장">
+								</form>
 								</div>
 
 								
@@ -102,6 +101,8 @@
 								</article>
 							</div>
 						</div>	
+										
+						
 						
 							<footer>
 
@@ -114,10 +115,8 @@
 							 <br>
 							 <span>CopyRight 2021. WagTheDog. All Rights Reserved.</span>
 							</div>
-							</footer>
-						
+			
 							
-					
 				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>

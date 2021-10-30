@@ -134,9 +134,11 @@ $calBody.addEventListener('click', (e) => {
     init.activeDate.setDate(day);
 	
     //reloadTodo();
-readDate();
-  }
+	readDate();
+	readMemo();
+ }
 });
+
 
 
 function readDate(){
@@ -147,5 +149,15 @@ function readDate(){
 	
 	console.log(month, year, day, date)
 	
-	$('.clickDate').text(year+"/"+month+"/"+date+"/"+day);
+	$('.clickDate').val(year+"/"+month+"/"+date+"/"+day);
+	
+}
+
+function readMemo() {
+	if($('.memo').css("display")=="none"){
+		$('.memo').show();
+	}
+	/*$('.clickDate').css("visibility","visibility");
+	$('.clickDate').css("visibility","hidden");*/
+	
 }
