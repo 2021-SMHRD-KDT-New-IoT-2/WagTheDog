@@ -16,8 +16,7 @@ html, body {
 }
 
 /* ======== Calendar ======== */
-.my-calendar {
-	
+.my-calendar {	
   width: 60%;
   margin: 30px;
   padding: 20px 20px 10px;
@@ -29,6 +28,18 @@ html, body {
 }
 
 .memo{
+	width: 25%;
+	padding: 20px 20px 10px;
+	border : 1px solid #ddd;
+	float : right;
+	display : inline;
+	bottom : 15%;
+	right : 10%;
+	position: absolute;
+}
+
+.popmemo{
+	
 	width: 30%;
 	padding: 20px 20px 10px;
 	border : 1px solid #ddd;
@@ -37,6 +48,7 @@ html, body {
 	bottom : 150px;
 	right : 50px;
 	position: absolute;
+	
 }
 
 .my-calendar .clicked-date {

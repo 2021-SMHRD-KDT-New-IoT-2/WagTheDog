@@ -20,6 +20,7 @@
 		text-align : center;
 		border : 2px solid #ddd
 		}
+	
 		</style>
 		
 	</head>
@@ -89,6 +90,7 @@
 					</div>
 				</div>
 			</div>
+			<a href="write.jsp" class="fontcolor">글쓰기</a>
 		</div>
 </div>		
 							<footer>

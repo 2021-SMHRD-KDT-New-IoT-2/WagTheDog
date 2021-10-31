@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
-.clickdatecss{
-	
-	border : 1px solid #ddd;
-}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -25,6 +22,20 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 	
 	}
+	
+	.clickDate{			
+		border: 0; !important;
+		background: #fafafa; !important;
+		width: 300px; !important;
+		padding: 1em; !important;
+		}
+		
+		.border > input{
+		border: 0; !important;
+		background: #fafafa; !important;
+		width: 300px; !important;
+		padding: 1em; !important;
+		}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1989,10 +2000,10 @@ textarea {
 		border: 0;
 		background: #fafafa;
 		width: 300px;
-		border-radius: 0.5em;
 		border: solid 1px #E5E5E5;
 		padding: 1em;
-
+		text-align : center;
+		
 		-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
