@@ -2,6 +2,29 @@
 @import url("fontawesome-all.min.css");
 
 
+	.feed_check {
+	width : 300px;
+	height : 300px;	
+	border: solid 1px #E5E5E5;
+	margin-left: 39%;
+	
+	
+}
+	.feed_amount {
+	width : 300px;
+	height : 300px;	
+	border: solid 1px #E5E5E5;
+	float : left;
+	
+}
+
+	.feed_times {
+	width : 300px;
+	height : 300px;	
+	border: solid 1px #E5E5E5;
+	float : right;
+	
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1993,6 +2016,7 @@ textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	form input[type="tel"],
 	form select,
 	form textarea {
 		-webkit-appearance: none;

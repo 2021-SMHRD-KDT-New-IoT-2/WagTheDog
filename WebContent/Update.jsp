@@ -36,18 +36,18 @@
 									<%} %>
 							<ul>
 								
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
+								<li><strong><a href="WebCare.jsp">Web CARE</a></strong></li>
+								<li><strong><a href="Product.jsp">PRODUCT</a></strong></li>
+								<li><strong><a href="Q&A.jsp">Q&A</a></strong></li>								
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="Notice.jsp">Notice</a></li>
-										<li><a href="QNA.jsp">Q&A</a></li>
-										<li><a href="Community.jsp">Communication</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
 									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
+									<li><a href="JoinService.jsp">JOIN</a></li>
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>

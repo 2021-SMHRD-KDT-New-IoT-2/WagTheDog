@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body class="homepage is-preload">
+<body>
 
 		<%	
 			MemberVO vo = (MemberVO)session.getAttribute("member");
@@ -34,9 +34,35 @@
 								<h2><%=vo.getId() %>님 환영합니다!</h2>
 									<%} %>
 							</header>
-							
+											
 						
+						<div class="wrapper">
+						<section class="carousel">
+						<div class="reel">
+
+						<article>
+							<a href="Product.jsp" class="image featured"><img src="images/art01.jpg" alt="" /></a>
+							<h3><strong><a href="Product.jsp">Product</a></strong></h3>							
+							<h3>Wag The Dog의<br> 제품을 소개합니다.</h3>	
+												
+						</article>
+						<article>
+						<a href="WebCare.jsp" class="image featured"><img src="images/calendarimage.jpg" alt="" /></a>
+						<h3><strong><a href="WebCare.jsp">WebCare</a></strong></h3>
+						<h3>우리 아이의 상태를 <br>기록해보세요.</h3>	
+						</article>
+						<article>
+							<a href="MyPetIssue.jsp" class="image featured"><img src="images/art03.jpg" alt="" /></a>
+							<h3><strong><a href="MyPetIssue.jsp">MyPetIssue</a></strong></h3>
+							<h3>우리 아이의 상태를<br>확인해보세요.</h3>	
+						</article>
+						
+					</div>
 						</div>
+				
+				</section>
+				
+				</div>
 
 					<!-- Nav -->
 					
@@ -50,19 +76,18 @@
 									<%} %>
 							<ul>
 								
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
+								<li><strong><a href="WebCare.jsp">Web CARE</a></strong></li>
+								<li><strong><a href="Product.jsp">PRODUCT</a></strong></li>
+								<li><strong><a href="Q&A.jsp">Q&A</a></strong></li>								
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="Notice.jsp">Notice</a></li>
-										<li><a href="QNA.jsp">Q&A</a></li>
-										<li><a href="Community.jsp">Communication</a></li>
-										
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
 									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
+									<li><a href="JoinService.jsp">JOIN</a></li>
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>
@@ -74,23 +99,6 @@
 						</nav>
 				</div>
 							
-		
-			<!-- Main -->
-				<div class="wrapper style2">
-					<article id="main" class="container special">
-						<a href="#"><img src="images/calendarimage.png" alt="" /></a>
-						<header>
-							<h2><a href="#">캘린더를 이용한 웹케어</a></h2>
-							<p>
-								반려동물의 급여시간, 급여횟수, 급여확인까지 한번에!
-							</p>
-						</header>
-
-						<footer>
-							<a href="WebCare.jsp" class="button">Web Care 바로가기!</a>
-						</footer>
-					</article>
-				</div>
 							<footer>
 							
 							<div style="text-align:center">

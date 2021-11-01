@@ -22,7 +22,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="Main.jsp" id="logo">Wag the Dog</a></h1>
+								<h1><a href="Main.jsp" id="logo">Wag The Dog</a></h1>
 								<br>
 							</header>
 							
@@ -57,9 +57,9 @@
 									<%} %>
 							<ul>
 								
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
+								<li><strong><a href="WebCare.jsp">Web CARE</a></strong></li>
+								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</a></strong></li>
+								<li><strong><a href="Product.jsp">PRODUCT</a></strong></li>
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>

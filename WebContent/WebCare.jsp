@@ -21,10 +21,8 @@
 	
 	%>
 		<div id="page-wrapper">
-					<!-- Header -->
+					
 				<div id="header">
-
-					<!-- Nav -->
 					
 						<nav id="nav">
 									<%if(vo==null){ %>
@@ -36,27 +34,27 @@
 									<%} %>
 							<ul>
 								
-								<li><strong><a href="WebCare.jsp">Web CARE</strong></a></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</strong></a></li>
-								<li><strong><a href="Product.jsp">PRODUCT</strong></a></li>
+								<li><strong><a href="WebCare.jsp">Web CARE</a></strong></li>
+								<li><strong><a href="Product.jsp">PRODUCT</a></strong></li>
+								<li><strong><a href="Q&A.jsp">Q&A</a></strong></li>								
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>
 										<li><a href="Notice.jsp">Notice</a></li>
-										<li><a href="QNA.jsp">Q&A</a></li>
-										<li><a href="Community.jsp">Communication</a></li>
+										<li><a href="Comminity.jsp">Communication</a></li>
 									</ul>
-									<%if(vo==null){ %>
+									 <%if(vo==null){ %>
 									<li><a href="Main.jsp">LOGIN</a></li>
+									<li><a href="JoinService.jsp">JOIN</a></li>
 									
 									<%}else{ %>
 									<li><a href="LogoutService">LOGOUT</a><li>
 									<li><a href="Update.jsp">MYPAGE</a></li>
 									<%} %>
-										
 								</li>
 								
 							</ul>
+							
 						</nav>
 				</div>
 		<!-- Main -->
@@ -66,7 +64,8 @@
 					
 						<article id="main" class="special">
 						
-						<header>
+							<header>
+							
 								<%@ include file="/Calendar.html"%>
 
 								<!-- 
@@ -74,7 +73,6 @@
 								<div><h3>Wag The Dog Calendar TIP</h3></div>
 								</div>
 								 -->
-								 
 								 
 								<div class="memo" style="display : none;">
 								
@@ -86,7 +84,7 @@
 								<input type="text" class="clickDate" name="memodate" readonly>
 								</div>
 								<div><br></div>
-								<h5>< 특이사항이 있었나요? ></h5>
+								<h5>특이사항이 있었나요?</h5>
 								
 								<br>
 								<h6><label>약을 먹었어요<input type="checkbox" name="medicine" value="medicine"></label></h6>
