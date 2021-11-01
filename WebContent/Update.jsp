@@ -17,7 +17,6 @@
 	<%
 
 		MemberVO vo = (MemberVO)session.getAttribute("member");	
-;
 	
 	%>
 			<div id="page-wrapper">

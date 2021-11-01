@@ -57,7 +57,7 @@
 							<h3>우리 아이의 상태를<br>확인해보세요.</h3>	
 						</article>
 						
-					</div>
+						</div>
 						</div>
 				
 				</section>

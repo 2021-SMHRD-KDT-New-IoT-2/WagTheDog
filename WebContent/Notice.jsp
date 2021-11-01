@@ -31,7 +31,7 @@
 		<!-- Main -->
 		<div id="page-wrapper">
 			<div id="header">
-		<!-- Nav -->
+					<!-- Nav -->
 					<div class="wrapper style1">
 						<nav id="nav">
 									<%if(vo==null){ %>

@@ -76,14 +76,19 @@
 								
 								<!-- 회원가입 필수요소 -->
 								<input name="pw" type="password" placeholder="PW를 입력하세요" required=required>
-								<br> <input name="phone_num" type="tel" placeholder="전화번호를 입력하세요" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" required=required>
-								<br> <input name="name" type="text" placeholder="이름을 입력하세요" required=required>
-								<br> <input name="email" type="text" placeholder="이메일을 입력하세요" required=required>
-								<br> <input name="address" type="text" placeholder="집주소를 입력하세요" required=required> 
-								<br> <input name="pet_name" type="text" placeholder="반려견의 이름을 입력하세요" required=required>
-								<br> <input name="pet_age" type="text" placeholder="반려견의 나이를 입력하세요" required=required>
-								<br> <input name="pet_variety" type="text" placeholder="반려견의 품종을입력하세요" required=required>								
 								<div><br></div>
+								<input name="phone_num" type="tel" placeholder="전화번호를 입력하세요" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" required=required>
+								<div><br></div>
+								<input name="name" type="text" placeholder="이름을 입력하세요" required=required>
+								<div><br></div>
+								<input name="email" type="text" placeholder="이메일을 입력하세요" required=required>
+								<div><br></div>
+								<input name="address" type="text" placeholder="집주소를 입력하세요" required=required> 
+								<div><br></div>
+								<input name="pet_name" type="text" placeholder="반려견의 이름을 입력하세요" required=required>							
+								<div><br></div>
+								<div><br></div>
+								
 								<input type="submit" value="JoinUs" class="button fit">&nbsp;&nbsp;
 								<input type="reset" value="Reset" class="button fit">&nbsp;&nbsp;
 								<input type="button" onclick="location.href='Main.jsp'" value="Cancel" class="button fit">

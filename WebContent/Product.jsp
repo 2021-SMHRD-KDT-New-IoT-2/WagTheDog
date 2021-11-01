@@ -16,7 +16,7 @@
 		<%	
 			MemberVO vo = (MemberVO)session.getAttribute("member");
 		%>
-		<div id="page-wrapper">
+			<div id="page-wrapper">
 					<!-- Header -->
 				<div id="header">
 

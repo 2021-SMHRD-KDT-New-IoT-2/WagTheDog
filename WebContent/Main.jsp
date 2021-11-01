@@ -55,11 +55,11 @@
 									<a href="LoginMain.jsp"><img src="images/logoimg.png" width="75px" height="75px"></a>
 
 									<%} %>
-							<ul>
+									<ul>
 								
 								<li><strong><a href="WebCare.jsp">Web CARE</a></strong></li>
-								<li><strong><a href="WhoWeAre.jsp">Who WE ARE</a></strong></li>
 								<li><strong><a href="Product.jsp">PRODUCT</a></strong></li>
+								<li><strong><a href="Q&A.jsp">Q&A</a></strong></li>								
 								<li>
 									<a href="#"><strong>Communicate</strong></a>
 									<ul>

@@ -90,7 +90,7 @@
 				</div>
 			</div>
 		</div>
-</div>		
+	</div>		
 							<footer>
 							<div style="text-align:center">
 							<a href="#" target="_blank" style="text-align:center">Blog</a>

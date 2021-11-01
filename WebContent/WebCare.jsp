@@ -20,7 +20,7 @@
 		request.setCharacterEncoding("UTF-8");
 	
 	%>
-		<div id="page-wrapper">
+			<div id="page-wrapper">
 					
 				<div id="header">
 					

@@ -84,6 +84,7 @@
 							<th scope = "col">작성일</th>
 						</tr>
 						</thead>
+						
 						<tbody>
 						<tr class="fontcolor">
 							<td>1</td>
