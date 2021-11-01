@@ -235,29 +235,4 @@ public class MemberDAO {
 		return check;
 	}
 	
-	public int webcare(String medicine, String hospital, String memo, String memodate) {
-		try{
-			connection();
-
-		String sql = "insert into MEMOtable values (?,?,?,?)";
-
-		pst = conn.prepareStatement(sql);
-
-		pst.setString(1, medicine);
-		pst.setString(2, hospital);
-		pst.setString(3, memo);
-		pst.setString(4, memodate);
-
-
-		// 6. sql문 실행 후 결과처리
-		cnt = pst.executeUpdate();
-
-	} catch (Exception e) {
-		System.out.println("기입실패");
-		e.printStackTrace();
-	} finally {
-		close();
-	}
-	return cnt;
-	}
 }

@@ -32,8 +32,7 @@ request.setCharacterEncoding("euc-kr"); //요청데이터의 인코딩 방식 지정
 
 		if(cnt>0) {
 			System.out.println("수정성공");
-			
-			//수정된 값 출력하도록 세션수정
+
 			MemberVO vo2 = new MemberVO(name, id, address);
 			
 			session.setAttribute("member", vo2);

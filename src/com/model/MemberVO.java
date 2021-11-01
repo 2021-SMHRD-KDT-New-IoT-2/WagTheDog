@@ -10,6 +10,7 @@ public class MemberVO {
 		this.name = name;
 		this.id = id;
 		this.address = address;	
+		
 	}
 	
 	public String getName() {
